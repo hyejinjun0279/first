@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+안녕하세요
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCktYAGfoUJU-NkbA0pRNM7esQ1RzIFV8U",
+        authDomain: "market-dfd67.firebaseapp.com",
+        databaseURL: "https://market-dfd67-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "market-dfd67",
+        storageBucket: "market-dfd67.appspot.com",
+        messagingSenderId: "731214171872",
+        appId: "1:731214171872:web:5ccf4bfa658ff966234a85",
+        measurementId: "G-0YMLG93MVP"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
+<script>
+  const db = firebase.firestore();
+  db.collection('product').get().then(결과)=>{
+    console.log(결과)
+  })
+
+
+</script>
+
+</body>
+</html>
